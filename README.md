@@ -11,6 +11,19 @@ https://sicelo-mzingisi-mduna.github.io/
 
 ## (Date Modified  : 2024 / 02 / 14 - 21:55)
 ---------------------------------------------------------------------------------------------------
+## Document all the changes made to the main branch for debugging purposes
 
+----------------------------------------------------------------------------------------------------
+
+# Modification Date: 2024 / 02 / 14
+
+* 1) __Created index.html__
+![alt text](image.png) 
+
+* 2) __Updated README.md__
+![alt text](image-1.png)
+
+* 3) __Created index.css + linked the stylesheet to index.html__
+![alt text](image-2.png)
 
 
