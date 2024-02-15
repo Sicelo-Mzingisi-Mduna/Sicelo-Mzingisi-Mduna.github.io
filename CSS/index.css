@@ -3,8 +3,6 @@
   position: relative;
 }
 
-
-
 .navbar ul {
   list-style-type: none;
   padding: 0;
@@ -19,8 +17,6 @@
 
   left: 0;
   top: 35%;
-
-
   
 }
 
@@ -30,9 +26,6 @@
   display: inline-block;
   margin-right: 10px; /* Adjust spacing between items */
 
-  /*display: block;
-  margin: 50px 0;
-  line-height: 30px; /* Adjust spacing between items */
 }
 
 /* Style for each link */
@@ -49,49 +42,6 @@
   background-color: #dcdcdc; /* Change background color on hover */
 }
 
-/* Styling for the navigation icon */
-.checkbtn{
-  font-size: 65px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  margin-left:40px;
-  margin-top:35px;
-  display: none;
-  animation: glow 4s linear infinite; /* Add pulse and glow animations */
-
-}
-
-
-@keyframes glow {
-  0% {
-    color: #ff0000; /* Red */
-  }
-  16.666% {
-    color: #ff7f00; /* Orange */
-  }
-  33.333% {
-    color: #ffff00; /* Yellow */
-  }
-  50% {
-    color: #00ff00; /* Green */
-  }
-  66.666% {
-    color: #0000ff; /* Blue */
-  }
-  83.333% {
-    color: #4b0082; /* Indigo */
-  }
-  100% {
-    color: #9400d3; /* Violet */
-  }
-}
-
-#check{
-  display: none;
-
-}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -102,8 +52,6 @@
     font-size:3em;
   }
 }
-
-
 
 
 .navbar ul li.active a {
