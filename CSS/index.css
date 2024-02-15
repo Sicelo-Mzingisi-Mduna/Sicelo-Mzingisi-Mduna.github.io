@@ -51,13 +51,49 @@
 
 /* Styling for the navigation icon */
 .checkbtn{
-  font-size: 30px;
+  font-size: 65px;
   color: #fff;
   float: right;
   line-height: 80px;
   margin-right: 40px;
+  margin-left:40px;
+  margin-top:35px;
   display: none;
+  animation: pulse 1s infinite alternate, glow 4s linear infinite; /* Add pulse and glow animations */
 
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes glow {
+  0% {
+    color: #ff0000; /* Red */
+  }
+  16.666% {
+    color: #ff7f00; /* Orange */
+  }
+  33.333% {
+    color: #ffff00; /* Yellow */
+  }
+  50% {
+    color: #00ff00; /* Green */
+  }
+  66.666% {
+    color: #0000ff; /* Blue */
+  }
+  83.333% {
+    color: #4b0082; /* Indigo */
+  }
+  100% {
+    color: #9400d3; /* Violet */
+  }
 }
 
 #check{
@@ -71,50 +107,6 @@
   }
 }
 
-
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-
-  .navbar fieldset {
-    /*height: 300px; /* Adjust the height as needed */
-    height: 100px; /* Set height to auto to adjust dynamically */
-    
-  }
-
-
-  .navbar ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: none; /* Background color for the mobile menu */
-    top: 10px; /* Adjust based on header height */
-    left: -100%; /* Hide by default */
-    text-align: center;
-    transition: all 0.3s ease;
-    display: block; /* Show the menu initially */
-  }
-
-  .checkbtn {
-      display: block; /* Display the menu icon */
-  }
-
-  /* Show the menu when the checkbox is checked */
-  #check:checked ~ .navbar ul {
-      left: 0;   
-  }
-
-  .navbar ul li {
-    display:inline-table;
-    padding-bottom: 20px;
-
-  }
-
-  .navbar ul li a {
-    font-size: 16px; /* Adjust font size */
-    display:inline; /* Make menu items block-level */
-  }
-}
 
 .navbar ul li.active a {
   background-color: #ff7d7d; /* Change background color for clicked item */
