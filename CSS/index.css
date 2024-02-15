@@ -103,7 +103,53 @@
 
 @media (max-width: 952px){
   nav ul li a{
-      font-size: 16px;
+      font-size: 12px;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .navbar fieldset {
+    /*height: 300px; /* Adjust the height as needed */
+    height: 100px; /* Set height to auto to adjust dynamically */
+    
+  }
+
+
+  .navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: none; /* Background color for the mobile menu */
+    top: 10px; /* Adjust based on header height */
+    left: -100%; /* Hide by default */
+    text-align: center;
+    transition: all 0.3s ease;
+    display: table;
+  }
+
+  .checkbtn {
+      display: block; /* Display the menu icon */
+
+  }
+
+  /* Show the menu when the checkbox is checked */
+  #check:checked ~ .navbar ul {
+      left: 0;   
+  }
+
+  .navbar ul li {
+    display:inline-table;
+    
+
+  }
+
+  .navbar ul li a {
+    font-size: 11px; /* Adjust font size */
+    display: inline-block; /* Make menu items block-level */
+    padding: 5px 5px; /* Add padding around the menu items */
+    
   }
 }
 
