@@ -72,6 +72,72 @@
   transform: scale(0.95); /* Enlarge the fieldset on hover */
 }
 
+.color-change-text {
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% { color: #191970; }
+  25% { color: #2F4F4F; }
+  50% { color: #663399; }
+  75% { color: #8B0000; }
+  100% { color: #333333; }
+}
+
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite alternate;
+}
+@keyframes glitch {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 2px;
+    top: -2px;
+  }
+  50% {
+    left: -2px;
+    top: 2px;
+  }
+  75% {
+    left: 2px;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.text-grow-shrink {
+  animation: growShrink 2s infinite alternate;
+}
+
+@keyframes growShrink {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+.text-pulse {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { font-size: 100%; }
+  100% { font-size: 120%; }
+}
+
+.underline-text {
+  animation: underline 1s infinite alternate;
+}
+
+@keyframes underline {
+  0% { text-decoration: none; }
+  100% { text-decoration: underline; }
+}
+
 /*-----------------------------------*/
 .main_fieldset {
   background-color: #C0C0C0; /* Silver Lining background color */
