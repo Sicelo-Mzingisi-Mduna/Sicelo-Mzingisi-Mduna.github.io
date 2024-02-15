@@ -108,7 +108,7 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .navbar fieldset {
     /*height: 300px; /* Adjust the height as needed */
