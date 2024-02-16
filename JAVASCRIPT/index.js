@@ -13,6 +13,31 @@ const navItems = document.querySelectorAll('.navbar-fieldset ul li');
     });
   });
 
+  // Function to add or remove 'fixed' class based on scroll position
+function handleScroll() {
+  const navbar = document.querySelector('.navbar');
+  const scrollY = window.scrollY;
+
+  // Add or remove 'fixed' class based on scroll position
+  if (scrollY > 0) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+}
+
+// Add scroll event listener to window
+window.addEventListener('scroll', handleScroll);
+
+// Function to add or remove 'fixed' class based on scroll position
+function handleScroll() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('fixed', window.scrollY > 0);
+}
+
+// Add scroll event listener to window
+window.addEventListener('scroll', handleScroll);
+
   
   
 
