@@ -1,5 +1,13 @@
 /* Style my navigational Bar Area */
 .navbar .navbar-fieldset {
+  background-color: #C0C0C0; /* Silver Lining background color */
+  border: 5px solid #8b8d8d; /* Dark Slate Gray */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 
+              0 0 20px rgba(0, 0, 0, 0.3), 
+              0 0 30px rgba(0, 0, 0, 0.1); /* Multiple shadows for depth */ /* Add shadow for glossy effect */
+  transition: transform 0.8s ease, border-color 0.5s ease, box-shadow 0.5s ease;
   position: relative;
 }
 
@@ -25,7 +33,23 @@
 .navbar ul li {
   display: inline-block;
   margin-right: 10px; /* Adjust spacing between items */
+  position: relative; /* Add relative positioning */
+}
 
+.navbar ul li:before {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust the distance of the bottom border from the text */
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the thickness of the border */
+  background-color: #8b8d8d; /* Dark Slate Gray */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Initially hide the border */
+}
+
+.navbar ul li:hover:before {
+  transform: scaleX(1); /* Expand the border on hover */
 }
 
 /* Style for each link */
@@ -34,12 +58,39 @@
   color: #333; /* Adjust link color */
   font-size: 23px; /* Adjust font size */
   padding: 10px 15px; /* Adjust padding */
-  transition: all 0.3s ease; /* Smooth transition */
+  position: relative; /* Add relative positioning */
 }
 
+.navbar ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust the thickness of the 3D effect */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Add glossy gradient */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Initially hide the 3D effect */
+}
+
+.navbar ul li a:hover:after {
+  transform: scaleX(1); /* Expand the 3D effect on hover */
+}
+
+
+
 /* Hover effect for links */
-.navbar ul li a:hover {
-  background-color: #dcdcdc; /* Change background color on hover */
+.navbar .navbar-fieldset:hover {
+  transform: translateZ(20px); /* Move the fieldset towards the viewer */
+  border-color: #666; /* Darken border color on hover for emphasis */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), 
+              0 0 50px rgba(0, 0, 0, 0.5), 
+              0 0 80px rgba(0, 0, 0, 0.3); /* Adjusted shadows on hover */ /* Enlarge the fieldset on hover */
+}
+
+.navbar ul li:hover a {
+  background-color: white; /* Change background color of the link when hovered */
+  color: #333; /* Adjust text color */
 }
 
 
@@ -59,6 +110,7 @@
   color: #ff7d7d; /* Adjust text color for better visibility */
 }
 
+
 .navbar fieldset {
   background-color: #C0C0C0; /* Silver Lining background color */
   border: none; /* Remove default border */
@@ -72,6 +124,18 @@
   transform: scale(0.95); /* Enlarge the fieldset on hover */
 }
 
+.navbar-fieldset ul li.active {
+  background-color: lightcoral;
+  color: #333;
+}
+
+.navbar {
+  animation: pulse 4s infinite;
+}
+.navbar:hover {
+  animation-play-state: paused;
+}
+
 
 
 /*-----------------------------------*/
@@ -80,12 +144,18 @@
   border: 5px solid #8b8d8d; /* Dark Slate Gray */
   border-radius: 10px; /* Optional: Add some border radius */
   padding: 20px; /* Adjust padding */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for glossy effect */
-  transition: transform 0.8s ease; /* Breathing effect transition */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 
+              0 0 20px rgba(0, 0, 0, 0.3), 
+              0 0 30px rgba(0, 0, 0, 0.1); /* Multiple shadows for depth */ /* Add shadow for glossy effect */
+  transition: transform 0.8s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .main_fieldset, .intro_fieldset:hover {
-  transform: scale(0.99); /* Enlarge the fieldset on hover */
+  transform: translateZ(20px); /* Move the fieldset towards the viewer */
+  border-color: #666; /* Darken border color on hover for emphasis */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), 
+              0 0 50px rgba(0, 0, 0, 0.5), 
+              0 0 80px rgba(0, 0, 0, 0.3); /* Adjusted shadows on hover */ /* Enlarge the fieldset on hover */
 }
 
 @keyframes dashedBorder {
@@ -104,12 +174,6 @@
   100% { transform: scale(0.968); }
 }
 
-.navbar {
-  animation: pulse 4s infinite;
-}
-.navbar:hover {
-  animation-play-state: paused;
-}
 
 
 .color-change-text {
@@ -170,7 +234,6 @@
   }
 }
 
-/*---------------------------------------------*/
 .intro_fieldset {
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -178,6 +241,9 @@
   margin: 0 auto;
   background-color: #f9f9f9;
 }
+
+/*---------------------------------------------*/
+
 
 .video-container {
   position: relative;
