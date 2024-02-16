@@ -183,7 +183,6 @@ table.personal_particulars {
   font-family: 'Arial', sans-serif;
   font-size: 20px;
   background-color: whitesmoke;
-  border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -205,7 +204,6 @@ table.tertiary_education {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   background-color: whitesmoke;
-  border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -227,7 +225,6 @@ table.secondary_education {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   background-color: whitesmoke;
-  border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -249,7 +246,6 @@ table.relevant_certificates {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   background-color: whitesmoke;
-  border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -272,7 +268,6 @@ table.work_experience {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   background-color: whitesmoke;
-  border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
