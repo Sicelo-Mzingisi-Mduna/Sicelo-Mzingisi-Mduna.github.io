@@ -190,5 +190,63 @@ body {
   100% { transform: scale(0.968); }
 }
 
+/**********************************************************************/
+
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite alternate;
+}
+@keyframes glitch {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 2px;
+    top: -2px;
+  }
+  50% {
+    left: -2px;
+    top: 2px;
+  }
+  75% {
+    left: 2px;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+
+/*******************************************/
+
+/* Add this CSS code */
+.contact-item {
+  border: 2px solid #2C3539; /* Add Gunmetal border */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Add transitions for smoother hover effect */
+}
+
+.contact-item:hover {
+  transform: translateY(15px); /* Lift the button on hover for a 3D effect */
+  border-color: #1E272E; /* Darken border color on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Enhance the shadow on hover */
+}
+
+.contact-item img {
+  max-width: 80px; /* Adjust image size if needed */
+  max-height: 80px; /* Adjust image size if needed */
+  border-radius: 10px; /* Ensure image has rounded corners */
+}
+
+.contact-item a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
 
 

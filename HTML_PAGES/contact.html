@@ -8,16 +8,6 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-  <style>
-    .main_fieldset {
-  width: 95%;
-  height: 100vh; /* Ensures the fieldset covers the entire viewport height */
-  background-image: url('../IMAGES/OTHER/site_under_construction.jpg'); /* Replace 'picture1.jpg' with your actual image file path */
-  background-size: cover; /* Cover the entire fieldset */
-  background-position: center; /* Center the background image */
-}
-  </style>
-
 </head>
 <body>
 
@@ -41,9 +31,76 @@
 
 <main>
   <fieldset class = "main_fieldset">
-    
+
+    <h1 class = "glitch-text" style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 10px; font-size: 25px;">
+      Welcome to my contact page! 📩 Let's Connect!🤝, Reach out to me here by clicking👆 on a Social link 🔗 below to chat ☎️,
+      collaborate💻, or simply say hello👋. I'm looking forward to hearing from you! 🌟
+    </h1>
 
   </fieldset>
+
+  <fieldset class="main_fieldset" id="contact-grid">
+    <style>
+      /* Styling for the fieldset */
+      #contact-grid {
+        border: none;
+        width: 100%;
+        margin: 0 auto; /* Center the fieldset */
+      }
+  
+      /* Styling for the contact grid */
+      #contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        height: auto; /* Set the height of the grid container */
+        overflow: auto; /* Add scrollbar if content overflows */
+      }
+  
+      /* Styling for each contact item */
+      .contact-item {
+        border-radius: 20px;
+        border: 5px solid whitesmoke;
+        padding: 10px;
+        text-align: center;
+        height: 80%; /* Set the height of each grid item */
+      }
+  
+      /* Styling for images inside contact items */
+      .contact-item img {
+        max-width: 100%;
+        max-height: 100%; /* Ensure image fits within the grid item */
+        border-radius: 10px;
+      }
+    </style>
+  
+    <div class="contact-item">
+      <a href="https://github.com/Sicelo-Mzingisi-Mduna">
+        <img src="..\IMAGES\CONTACT\github.png" alt="GitHub">
+      </a>
+    </div>
+    <div class="contact-item">
+      <a href="https://www.linkedin.com/in/yourprofile">
+        <img src="..\IMAGES\CONTACT\linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="contact-item">
+      <a href="mailto:sicelomduna@gmail.com">
+        <img src="..\IMAGES\CONTACT\email.png" alt="Email">
+      </a>
+    </div>
+    <div class="contact-item">
+      <a href="tel:+1234567890">
+        <img src="..\IMAGES\OTHER\site_under_construction.jpg" alt="Phone">
+      </a>
+    </div>
+  </fieldset>
+
+    
+    
+  
 </main>
 
 <!-- javascript -->
