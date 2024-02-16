@@ -110,4 +110,77 @@
   animation-play-state: paused;
 }
 
+/*********************************/
+table.tertiary_education {
+  width: 90%; /* Adjust the percentage as needed */
+  margin: 0 auto; /* Center the table horizontally */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+
+}
+
+.tertiary_education th, .tertiary_education td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #F2F2F2;
+    border: 1px solid black;
+}
+
+.tertiary_education th {
+    background-color: #536278;
+    font-weight:bolder;
+    border: 1px solid black;
+}
+
+table.secondary_education {
+  width: 90%; /* Adjust the percentage as needed */
+  margin: 0 auto; /* Center the table horizontally */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+
+}
+
+.secondary_education th, .secondary_education td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #E5E5E5;
+    border: 1px solid black;
+}
+
+.secondary_education th {
+    background-color: #536278;
+    font-weight:bolder;
+    border: 1px solid black;
+}
+
+table.relevant_certificates {
+  width: 90%; /* Adjust the percentage as needed */
+  margin: 0 auto; /* Center the table horizontally */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+
+}
+
+.relevant_certificates th, .relevant_certificates td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #E5E5E5;
+    border: 1px solid black;
+}
+
+.relevant_certificates th {
+    background-color: #536278;
+    font-weight:bolder;
+    border: 1px solid black;
+}
+
 

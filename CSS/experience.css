@@ -109,3 +109,31 @@
 .navbar:hover {
   animation-play-state: paused;
 }
+
+/********************************************/
+table.work_experience {
+  width: 90%; /* Adjust the percentage as needed */
+  margin: 0 auto; /* Center the table horizontally */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  
+
+}
+
+.work_experience th, .work_experience td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #E5E5E5;
+    border: 1px solid black;
+    
+}
+
+.work_experience th {
+    background-color: #536278;
+    font-weight:bolder;
+    border: 1px solid black;
+    
+}
