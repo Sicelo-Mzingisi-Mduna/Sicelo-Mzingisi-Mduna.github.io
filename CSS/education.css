@@ -264,4 +264,33 @@ table.relevant_certificates {
     border: 1px solid black;
 }
 
+/****************************************************/
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite alternate;
+}
+@keyframes glitch {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 2px;
+    top: -2px;
+  }
+  50% {
+    left: -2px;
+    top: 2px;
+  }
+  75% {
+    left: 2px;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+
 
