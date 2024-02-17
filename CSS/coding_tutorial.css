@@ -1,0 +1,298 @@
+/* Style my navigational Bar Area */
+.navbar .navbar-fieldset {
+  background-color: #C0C0C0; /* Silver Lining background color */
+  border: 5px solid #8b8d8d; /* Dark Slate Gray */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 
+              0 0 20px rgba(0, 0, 0, 0.3), 
+              0 0 30px rgba(0, 0, 0, 0.1); /* Multiple shadows for depth */ /* Add shadow for glossy effect */
+  transition: transform 0.8s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navbar ul.show {
+  
+  display:inline-block;
+  position: absolute;
+
+  left: 0;
+  top: 35%;
+  
+}
+
+
+/* Style for each list item */
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between items */
+  position: relative; /* Add relative positioning */
+}
+
+.navbar ul li:before {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust the distance of the bottom border from the text */
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the thickness of the border */
+  background-color: #8b8d8d; /* Dark Slate Gray */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Initially hide the border */
+}
+
+.navbar ul li:hover:before {
+  transform: scaleX(1); /* Expand the border on hover */
+}
+
+/* Style for each link */
+.navbar ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+  font-size: 23px; /* Adjust font size */
+  padding: 10px 15px; /* Adjust padding */
+  position: relative; /* Add relative positioning */
+}
+
+.navbar ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust the thickness of the 3D effect */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Add glossy gradient */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Initially hide the 3D effect */
+}
+
+.navbar ul li a:hover:after {
+  transform: scaleX(1); /* Expand the 3D effect on hover */
+}
+
+
+
+/* Hover effect for links */
+.navbar .navbar-fieldset:hover {
+  transform: translateZ(20px); /* Move the fieldset towards the viewer */
+  border-color: #666; /* Darken border color on hover for emphasis */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), 
+              0 0 50px rgba(0, 0, 0, 0.5), 
+              0 0 80px rgba(0, 0, 0, 0.3); /* Adjusted shadows on hover */ /* Enlarge the fieldset on hover */
+}
+
+.navbar ul li:hover a {
+  background-color: white; /* Change background color of the link when hovered */
+  color: #333; /* Adjust text color */
+}
+
+.navbar ul li.active a {
+  background-color: #ff7d7d; /* Change background color for clicked item */
+  color: #ff7d7d; /* Adjust text color for better visibility */
+}
+
+
+.navbar fieldset {
+  background-color: #C0C0C0; /* Silver Lining background color */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for glossy effect */
+  transition: transform 0.7s ease; /* Breathing effect transition */
+}
+
+.navbar fieldset:hover {
+  transform: scale(0.95); /* Enlarge the fieldset on hover */
+}
+
+.navbar-fieldset ul li.active {
+  background-color: lightcoral;
+  color: #333;
+}
+
+.navbar {
+  animation: pulse 4s infinite;
+  transition: all 0.3s ease; /* Smooth transition for the navbar */
+  
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+.navbar:hover {
+  animation-play-state: paused;
+}
+
+
+
+/***************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0; /* Resetting default margin */
+}
+
+/************************************************/
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .header{
+    display:block;
+    width:100%;
+    font-size:3em;
+  }
+}
+
+/*-----------------------------------*/
+.main_fieldset {
+  background-color: #C0C0C0; /* Silver Lining background color */
+  border: 2.5px solid #2C3539; /* Add Gunmetal border */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for glossy effect */
+  transition: transform 0.9s ease; /* Breathing effect transition */
+}
+
+
+.main_fieldset:hover {
+  transform: scale(0.99); /* Enlarge the fieldset on hover */
+}
+
+@keyframes dashedBorder {
+  0% { border-style: solid; }
+  50% { border-style: dashed; }
+  100% { border-style: solid; }
+}
+
+.main_fieldset {
+  animation: dashedBorder 4s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.968); }
+  50% { transform: scale(1); }
+  100% { transform: scale(0.968); }
+}
+
+/******************************************/
+
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite alternate;
+}
+@keyframes glitch {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 2px;
+    top: -2px;
+  }
+  50% {
+    left: -2px;
+    top: 2px;
+  }
+  75% {
+    left: 2px;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.underline-text {
+  animation: underline 1s infinite alternate;
+}
+
+@keyframes underline {
+  0% { text-decoration: none; }
+  100% { text-decoration: underline; }
+}
+
+/*******************************************/
+
+/* Add this CSS code */
+.coding_tutorial-item {
+  border: 2px solid #2C3539; /* Add Gunmetal border */
+  border-radius: 10px; /* Optional: Add some border radius */
+  padding: 20px; /* Adjust padding */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Add transitions for smoother hover effect */
+}
+
+.coding_tutorial-item:hover {
+  transform: translateY(15px); /* Lift the button on hover for a 3D effect */
+  border-color: #1E272E; /* Darken border color on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Enhance the shadow on hover */
+}
+
+.coding_tutorial-item img {
+  max-width: 80px; /* Adjust image size if needed */
+  max-height: 80px; /* Adjust image size if needed */
+  border-radius: 10px; /* Ensure image has rounded corners */
+}
+
+.coding_tutorial-item a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+/****************************************************************/
+/* Styling for the fieldset */
+#coding_tutorial-grid {
+  border: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; /* Center the fieldset */
+}
+
+/* Styling for the coding_tutorial grid */
+#coding_tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: auto; /* Set the height of the grid container */
+  overflow: auto; /* Add scrollbar if content overflows */
+}
+
+/* Styling for each coding_tutorial item */
+.coding_tutorial-item {
+  border-radius: 20px;
+  border: 5px solid whitesmoke;
+  padding: 10px;
+  text-align: center;
+  height: 80%; /* Set the height of each grid item */
+}
+
+/* Styling for images inside coding_tutorial items */
+.coding_tutorial-item img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure image fits within the grid item */
+  border-radius: 10px;
+}
+
+
+
+
+
