@@ -257,6 +257,24 @@ body {
   }
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#profile-picture:hover {
+  animation: bounce 0.5s ease;
+}
+
+
+
 .intro_fieldset {
   border: 2px solid #ccc;
   border-radius: 10px;
