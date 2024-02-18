@@ -292,6 +292,59 @@ body {
   border-radius: 10px;
 }
 
+/*****************************************************************************/
+
+.breadcrumb {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.breadcrumb:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:not(:last-child):after {
+  content: '>';
+  margin: 0 5px;
+  color: #888;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.breadcrumb ul li.active a {
+  background-color: #ff7d7d; /* Change background color for clicked item */
+  color: #ff7d7d; /* Adjust text color for better visibility */
+}
 
 
 

@@ -38,6 +38,26 @@ function handleScroll() {
 // Add scroll event listener to window
 window.addEventListener('scroll', handleScroll);
 
+/*******************************************************************/
+
+const breadcrumbItems = document.querySelectorAll('.breadcrumb li');
+
+// Add click event listener to each breadcrumb item
+breadcrumbItems.forEach(item => {
+  item.addEventListener('click', function() {
+    // Remove the active class from all breadcrumb items
+    breadcrumbItems.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Add the active class to the clicked item
+    this.classList.add('active');
+  });
+});
+
+/*******************************************************************/
+  
+
   
   
 

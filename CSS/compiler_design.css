@@ -231,7 +231,7 @@ body {
 /*******************************************/
 
 /* Add this CSS code */
-.coding_studio-item {
+.compiler_design-item {
   border: 2px solid #2C3539; /* Add Gunmetal border */
   border-radius: 10px; /* Optional: Add some border radius */
   padding: 20px; /* Adjust padding */
@@ -239,34 +239,34 @@ body {
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Add transitions for smoother hover effect */
 }
 
-.coding_studio-item:hover {
+.compiler_design-item:hover {
   transform: translateY(15px); /* Lift the button on hover for a 3D effect */
   border-color: #1E272E; /* Darken border color on hover */
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Enhance the shadow on hover */
 }
 
-.coding_studio-item img {
+.compiler_design-item img {
   max-width: 80px; /* Adjust image size if needed */
   max-height: 80px; /* Adjust image size if needed */
   border-radius: 10px; /* Ensure image has rounded corners */
 }
 
-.coding_studio-item a {
+.compiler_design-item a {
   text-decoration: none; /* Remove default underline */
   color: inherit; /* Inherit text color from parent */
 }
 
 /****************************************************************/
 /* Styling for the fieldset */
-#coding_studio-grid {
+#compiler_design-grid {
   border: none;
   width: 100%;
   height: 100%;
   margin: 0 auto; /* Center the fieldset */
 }
 
-/* Styling for the coding_studio grid */
-#coding_studio-grid {
+/* Styling for the compiler_design grid */
+#compiler_design-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -276,8 +276,8 @@ body {
   overflow: auto; /* Add scrollbar if content overflows */
 }
 
-/* Styling for each coding_studio item */
-.coding_studio-item {
+/* Styling for each compiler_design item */
+.compiler_design-item {
   border-radius: 20px;
   border: 5px solid whitesmoke;
   padding: 10px;
@@ -285,8 +285,8 @@ body {
   height: 80%; /* Set the height of each grid item */
 }
 
-/* Styling for images inside coding_studio items */
-.coding_studio-item img {
+/* Styling for images inside compiler_design items */
+.compiler_design-item img {
   max-width: 100%;
   max-height: 100%; /* Ensure image fits within the grid item */
   border-radius: 10px;
@@ -345,6 +345,9 @@ body {
   background-color: #ff7d7d; /* Change background color for clicked item */
   color: #ff7d7d; /* Adjust text color for better visibility */
 }
+
+
+
 
 
 
